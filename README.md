@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple project (application) that helps me collect those data I want from our company's website, which save me a lot of time. 
 
-Things you may want to cover:
+In this project, I learnt how to
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Use Nokogiri (gem) to collect data
+* Use Mechanize (gem) to log in company's website
+* Create a class to optimise the code
+* Use begin/rescue to solve 404 issue
+* Use byebug to find out what's happening in my project.
