@@ -1,0 +1,21 @@
+<% count = 1 %>
+<% for number in 1..2000 do %>
+  <% @unit_page = UnitPagePresenter.new(#url/#{}.html, @agent) %>
+
+  <% if @unit_page %>
+    <% @unit_page.quizzes.each do |quiz| %>
+      <ul>
+        <li>No: <%= count%> </li>
+        <li>Unit: <%= number %></li>
+        <li><b>Quiz: <%= quiz[:title] %></b></li>
+        <% quiz[:options].each do |option| %>
+          <li><%= option %></li>
+        <% end %>
+        <li style="color:gray;">Note: <%= quiz[:explanation] %></li>
+        <% count = count + 1 %>
+      </ul>
+      <br>
+    <% end %>
+  <% end %>
+    
+<% end %>
