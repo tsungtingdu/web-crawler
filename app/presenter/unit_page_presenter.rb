@@ -3,6 +3,10 @@ class UnitPagePresenter
   def initialize(unit_url, mechanize_agent)
     @unit_url = unit_url
     @mechanize_agent = mechanize_agent
+
+    # use nokogiri to parse HTML
+    # use begin/rescue to solve 404 issue (there are some pages are 404)
+    # use .xpath to find the specific content I need
     begin   
       @page = mechanize_agent.get @unit_url  
       @doc = Nokogiri::HTML(@page.body)
@@ -12,9 +16,7 @@ class UnitPagePresenter
     end  
   end
 
-  def doc
-    @doc
-  end 
+  # use quizzes method to sort out the data
 
   def quizzes
     if @quiz_divs

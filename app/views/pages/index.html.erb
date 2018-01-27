@@ -1,6 +1,8 @@
+<!-- use for loop to visit every page on the website and print out the data -->
+
 <% count = 1 %>
 <% for number in 1..2000 do %>
-  <% @unit_page = UnitPagePresenter.new(#url/#{}.html, @agent) %>
+  <% @unit_page = UnitPagePresenter.new(#https:/xxx/#{}.html, @agent) %>
 
   <% if @unit_page %>
     <% @unit_page.quizzes.each do |quiz| %>
