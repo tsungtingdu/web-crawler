@@ -6,7 +6,7 @@ There are three main files that I worked on in this project:
 
 * app/controllers/pages_controller.rb
 * app/presenter/unit_page_presenter.rb
-* app/views/index.html.erb
+* app/views/pages/index.html.erb
 
 In this project, I learnt how to
 
