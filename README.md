@@ -1,6 +1,6 @@
 # README
 
-This is a simple project (application) that helps me collect those data I want from our company's website, which save me a lot of time. 
+This is a simple project (application) that helps me collect those data I want from a website, which save a lot of time for me. 
 
 In this project, I learnt how to
 
